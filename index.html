@@ -6,8 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-
+<body class=" m-0 p-0 flex  justify-center h-screen items-center ">
+    <div class="flex flex-col justify-start items-center p-2 h-80 border-1 border-solid w-80 gap-2">
+        <div>
+            <label for="taskInput" class="text-lg">Task:</label>
+        <input type="text" name="task" id="taskInput" class="border-blue-200 border-1 rounded-md">
+        <button id="addTask" class="border-solid border-1 rounded-md p-0.5" type="button">Add</button>
+        </div>
+        <div id="container" class="flex flex-col  w-60 h-60 gap-2 border-1 ">
+            <div id="taskContainer" class="flex flex-col gap-2 overflow-y-auto"></div>
+        </div>
+    </div>
 </body>
 </html>
-<script src="index.ts" type="module"></script>
+<script src="index.ts" type="module"></script> 
